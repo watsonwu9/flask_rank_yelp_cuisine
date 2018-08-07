@@ -7,7 +7,7 @@ from wtforms import Form, SelectField
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI']='sqlite:////Users/IAN/Desktop/uiuc/DMC/task4/Flask/cuisines.db'
+app.config['SQLALCHEMY_DATABASE_URI']='sqlite:////Users/IAN/Desktop/uiuc/DMC/task4/my_flask/cuisines.db'
 db = SQLAlchemy(app)
 #app.debug = True
 
