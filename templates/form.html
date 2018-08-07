@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+   <body> 
+   	  <h1>National Cuisine Ranking for Dishes</h1> 
+      <h3>Find the Best Cuisine for Your Favoriate Dish</h3>  
+      {% from "_formhelpers.html" import render_field %}  
+      <form action =  "{{url_for('index') }}" method = "POST" float:right>
+	      	<div display: inline-block>{{ render_field(form.select) }}</div>
+	     	<div display: inline-block><input type="submit" value = 'Submit'></div>
+      </form>  
+      {{ table }}
+   </body>
+</html>
